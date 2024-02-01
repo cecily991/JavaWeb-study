@@ -3,10 +3,13 @@ It's a learning record of mybatis
 
 
 
-#### 项目实战
+#### mybatis增删改查 crud
 
-​	tlias
 
-​	开发规范---接口
 
-![image-20240201143741265](C:\Users\t'y'wan'an\AppData\Roaming\Typora\typora-user-images\image-20240201143741265.png)
+#### tlias项目学习
+
+- 部门管理
+
+- 员工管理
+- 登录
