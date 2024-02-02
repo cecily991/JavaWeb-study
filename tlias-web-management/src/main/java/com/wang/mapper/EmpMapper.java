@@ -1,8 +1,10 @@
 package com.wang.mapper;
 
 import com.wang.pojo.Emp;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -22,4 +24,15 @@ public interface EmpMapper {
     public List<Emp> list(String name, Short gender, LocalDate begin, LocalDate end);
 
     void delete(List<Integer> ids);
+
+    @Insert("insert into emp(username,name,image,gender,job,entrydate,dept_id,create_time,update_time)\n" +
+            "         values (#{username},#{name},#{image},#{gender}.,#{job},#{entrydate},#{deptId},#{createTime},#{updateTime})")
+    void add(Emp emp);
+
+    @Select("select * from emp where id = #{id}")
+    Emp findById(Integer id);
+
+    @Update("update emp set username=#{username},name=#{name},gender=#{gender},image=#{image},dept_id=#{deptId}," +
+                "entrydate=#{entrydate},job=#{job},update_time=#{updateTime} where id = #{id}")
+    void update(Emp emp);
 }
