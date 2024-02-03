@@ -32,7 +32,8 @@ public interface EmpMapper {
     @Select("select * from emp where id = #{id}")
     Emp findById(Integer id);
 
-    @Update("update emp set username=#{username},name=#{name},gender=#{gender},image=#{image},dept_id=#{deptId}," +
-                "entrydate=#{entrydate},job=#{job},update_time=#{updateTime} where id = #{id}")
     void update(Emp emp);
+
+    @Select("select * from emp where username = #{username} and password = #{password}")
+    Emp getByUsernameAndPassword(Emp emp);
 }

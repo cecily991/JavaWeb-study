@@ -53,15 +53,23 @@ public class EmpServiceImpl implements EmpService {
         empMapper.add(emp);
     }
 
+    //根据ID查询员工信息
     @Override
     public Emp findById(Integer id) {
         return empMapper.findById(id);
     }
 
+    //更新员工信息
     @Override
     public void update(Emp emp) {
         emp.setUpdateTime(LocalDateTime.now());
 
         empMapper.update(emp);
+    }
+
+    //员工登录
+    @Override
+    public Emp login(Emp emp) {
+        return empMapper.getByUsernameAndPassword(emp);
     }
 }
