@@ -25,3 +25,8 @@ aliyun:
     accessKeySecret: XP68YOUmjTf7q1rnmLVac1gXjLlbsy
     bucketName: dormitory-group1
 
+#spring事务管理日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+
