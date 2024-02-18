@@ -1,0 +1,31 @@
+spring:
+  #\u6570\u636E\u5E93\u8FDE\u63A5\u4FE1\u606F
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tlias
+    username: root
+    password: 0913@Wang
+  #\u6587\u4EF6\u4E0A\u4F20\u914D\u7F6E
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+#Mybatis\u914D\u7F6E
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+#\u963F\u91CC\u4E91OSS
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAI5tGDeoNpwax69vHu2nfg
+    accessKeySecret: XP68YOUmjTf7q1rnmLVac1gXjLlbsy
+    bucketName: dormitory-group1
+
+#spring\u4E8B\u52A1\u7BA1\u7406\u65E5\u5FD7
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug

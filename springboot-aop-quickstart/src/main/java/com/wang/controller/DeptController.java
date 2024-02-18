@@ -1,15 +1,9 @@
 package com.wang.controller;
 
-import com.wang.anno.Log;
 import com.wang.pojo.Dept;
-import com.wang.pojo.Emp;
 import com.wang.pojo.Result;
 import com.wang.service.DeptService;
-import com.wang.service.EmpService;
-import jakarta.websocket.server.PathParam;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,7 +30,6 @@ public class DeptController {
     }
 
     @DeleteMapping("/{id}")
-    @Log
     public Result delete(@PathVariable Integer id){
         log.info("根据id删除部门：{}",id);
 
@@ -46,7 +39,6 @@ public class DeptController {
     }
 
     @PostMapping("")
-    @Log
     public Result add(@RequestBody Dept dept){
         log.info("新增部门：{}",dept);
 
@@ -65,7 +57,6 @@ public class DeptController {
     }
 
     @PutMapping("")
-    @Log
     public Result update(@RequestBody Dept dept){
         log.info("根据ID修改部门：{}",dept);
 
