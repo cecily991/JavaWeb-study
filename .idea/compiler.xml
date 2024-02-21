@@ -9,12 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tlias-web-management" />
         <module name="springboot-aop-quickstart" />
+        <module name="springboot-web-config" />
         <module name="springboot-mybatis-crud" />
+        <module name="springboot-web-config2" />
+        <module name="itheima-utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
+      <module name="itheima-utils" target="11" />
       <module name="springboot-aop-quickstart" target="17" />
       <module name="springboot-mybatis-crud" target="11" />
+      <module name="springboot-web-config" target="17" />
+      <module name="springboot-web-config2" target="11" />
       <module name="tlias-web-management" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -22,6 +28,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-aop-quickstart" options="-parameters" />
       <module name="springboot-mybatis-crud" options="-parameters" />
+      <module name="springboot-web-config" options="-parameters" />
+      <module name="springboot-web-config2" options="-parameters" />
       <module name="tlias-web-management" options="-parameters" />
     </option>
   </component>
