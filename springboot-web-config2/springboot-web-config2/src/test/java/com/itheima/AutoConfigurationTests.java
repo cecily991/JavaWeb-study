@@ -5,13 +5,11 @@ import com.example.HeaderParser;
 import com.example.TokenParser;
 import com.google.gson.Gson;
 import com.itheima.pojo.Result;
-import com.wang.controller.EmpController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 
-import java.net.SocketOption;
 
 @SpringBootTest
 public class AutoConfigurationTests {

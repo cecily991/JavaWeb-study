@@ -1,0 +1,7 @@
+#阿里云OSS
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAI5tGDeoNpwax69vHu2nfg
+    accessKeySecret: XP68YOUmjTf7q1rnmLVac1gXjLlbsy
+    bucketName: dormitory-group1
